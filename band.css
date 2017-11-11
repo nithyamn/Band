@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Arial,sans-serif;
+    color:black;
+}
+
+/*HEADER*/
+header{
+    background:black;
+/*    padding:15px 20px;*/
+    box-sizing: border-box;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:54px;
+    font-size:15px;
+    z-index: 1;
+    border-bottom:dashed 1px white;
+}
+
+.clearfix:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+nav li{
+    display:inline;
+    color:white;
+    line-height:50px;
+/*    border:solid 1px white;*/
+    padding:15px;
+    box-sizing: border-box;
+}
+#home{
+    margin-left:220px;
+}
+
+li#band-name{
+    margin:0 150px;
+    font-family: Stencil Std, fantasy;
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+li#band-name:hover{
+    text-decoration: underline;
+}
+li a:link,li a:visited,li a:active{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+#head-li li:hover{
+    background:rgba(255,255,255,0.7);
+    color:black;
+    border:solid 1px black;
+    box-sizing: border-box;
+    transition:background 0.2s;
+}
+
+/*IMAGE*/
+
+#image{
+    margin-top:45px;
+    position:relative;
+}
+
+#image #h3-move{
+    position:absolute;
+    top:616px;
+    left:634px;
+    color:white;
+    font-size:24px;
+    font-weight:lighter;
+}
+#h3-move{
+    animation-name: band-image;
+    animation-delay: 2s;
+    animation-duration: 1s; 
+}
+
+#image #p-move{
+    position:absolute;
+    top:660px;
+    left:535px;
+    color:white;
+    font-weight:bold;   
+    font-size:14px; 
+    
+}
+
+
+/*ABOUT*/
+#about{
+    width:800px;
+    margin:90px auto;
+}
+
+#pics{
+    margin:inherit;
+    margin-left:180px;
+}
+#pics img{
+    border-radius: 100%;
+    margin-left:10px;
+}
+/*
+
+#pics img:hover{
+    transform:rotate(15deg);
+    opacity:0.5;
+}
+*/
+
+figure{
+    display:inline-block;
+/*    padding-right:0px;*/
+    box-sizing: border-box;
+}
+
+figcaption{ 
+    margin:0 52px 20px 52px;
+}
+
+.fonts h2{
+    font-size:30px;
+    letter-spacing:4px;
+    font-weight:400;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.fonts p{
+    font-size:15px;
+    color:#777;
+    margin:20px;
+    text-align:center;
+    font-style: italic;
+}
+
+#content{
+    color:black;
+    font-size:15px;
+    word-spacing:3px;
+    line-height: 20px;
+    text-align: justify;
+    font-style:normal;
+}
+
+/*Tour dates*/
+#tour-dates{
+    background:black;
+}
+
+#tour-dates h2{
+    color:white;
+    padding-top:80px;
+    text-align:center;
+}
+
+.article-wrap{
+    width:935px;
+    height:650px;
+    margin:30px auto;
+/*    border:solid 1px white;*/
+}
+.a1,.a2,.a3{
+    float:left;
+    width:264px;
+    height:390px;
+/*    border:solid 1px blue;*/
+    background:white;
+    margin:30px 0 0 22px;
+}
+
+#tour-dates .article-wrap .a1{
+    margin-left:48px;
+}
+
+.sec-body p{
+    text-align:left;
+    color:black;
+    font-style:normal;
+    line-height:20px;
+    font-size:16px; 
+    padding:0;
+}
+
+.sec-body h4{
+    padding:20px 20px 0 20px;
+}
+
+.sec-body #date{
+    color:#777;
+}
+
+.sec-body a:link,.sec-body a:visited{
+    background: black;
+    color:white;
+    padding:10px;
+    margin-left:20px;
+    text-decoration: none;
+}
+
+.sec-body a:hover{
+    box-shadow:0 2px 10px 1px #999;
+    transition:box-shadow 0.5s;
+}
+
+#oct,#nov,#dec{
+    background: white;
+    margin:0 0 0 49px;
+    padding:10px;
+    width:816px;
+    text-align:left;
+    font-style:normal;
+    border-bottom:solid 1px #ccc;
+}
+
+.article-wrap span{
+    color:white;
+    background:#f71336;
+    margin-left:20px;
+    padding:2px 6px;
+}
+
+.article-wrap #three{
+    background: black;
+    border-radius: 100%;
+    margin-left:710px;
+}
+
+.sec-head img:hover{
+    opacity:0.6;
+    transition:opacity 0.5s;
+}
+
+@keyframes band-image{
+    from{
+        color:black;
+        font-size: 14px;
+    }
+    to{
+        color:white;
+        font-size:30px;
+    }
+}
+
+/*Contact*/
+/*
+
+
+#contact{
+    width:800px;
+    margin:0 auto;
+    height:400px;
+    border:solid 1px black;
+}
+
+#contact h2{
+    margin-top:100px;
+}
+
+#left-float{
+    float:left;
+    margin:20px;
+}
+#left-float li{
+    line-height: 25px;
+}
+
+#float-right{
+    float:right;
+    margin:20px;
+}
+
+input[type="text"],
+input[type="email"]{
+    padding:10px;
+}
+
+input[type="email"]
+{
+    margin-left:10px;
+}
+
+input[type="text"]#msg{
+    padding-right:216px;
+    margin-top:10px;
+}
+
+input[type="submit"],input[type="reset"]{
+    margin:10px 0 0 376px;
+    padding:8px 15px;
+    color:white;
+    background:black;
+    text-transform: uppercase;
+    border:dashed 1px white;
+}
+
+input[type="submit"]:hover{
+    box-shadow:0 2px 20px 2px #777;
+    cursor:pointer;
+    transition:box-shadow 0.5s;
+}
+
+*/
+
+/*Copyright Info*/
+.random-data{
+    padding:10px;
+    background:#ccc;
+    text-align:center;
+    color:#777;
+    font-style:italic;
+    line-height: 25px;
+}
+
+.random-data a:link,.random-data a:visited{
+    color:#777;
+    font-size:14px;
+    text-decoration: none;
+}
+
+.random-data span{
+    color:red;
+}
+
+#contact-cp{
+    margin-top:90px;
+}
+
+/*Register*/
+footer#reg.fonts, footer#login.fonts{
+    width:700px;
+    margin:70px auto;
+/*    border:1px solid #bbb;*/
+}
+footer#reg.fonts div.clearfix form,footer#login.fonts div.clearfix form{
+    margin-left:230px;
+}
+footer#reg.fonts div.clearfix form input,div.clearfix form input{
+    width:250px;
+    padding:8px;
+}
+footer#reg.fonts div.clearfix form input[type='submit'],div.clearfix form input[type="submit"]{
+    background:black;
+    border:1px solid black;
+    color:white;
+}
+footer#reg.fonts div.clearfix form small,h3,footer#login.fonts div.clearfix form small,h3{
+    color:crimson;
+}

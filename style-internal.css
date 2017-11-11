@@ -1,0 +1,95 @@
+
+#fan-page{
+/*    border:solid 1px #ddd;*/
+    margin-top:120px;
+}
+/*Contact*/
+#contact{
+    width:800px;
+    margin:0 auto;
+    height:400px;
+/*    border:solid 1px black;*/
+}
+
+#contact h2{
+    margin-top:100px;
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+}
+#left-float{
+    float:left;
+    margin:20px;
+}
+#left-float li{
+    line-height: 25px;
+}
+
+#float-right{
+    float:right;
+    margin:20px;
+}
+
+input[type="text"],
+input[type="email"]{
+    padding:10px;
+}
+
+input[type="email"]
+{
+    margin-left:10px;
+}
+
+input[type="text"]#msg{
+    padding-right:216px;
+    margin-top:10px;
+}
+
+input[type="submit"],input[type="reset"]{
+    margin:10px 0 0 376px;
+    padding:8px 15px;
+    color:white;
+    background:black;
+    text-transform: uppercase;
+    border:dashed 1px white;
+}
+
+input[type="submit"]:hover{
+    box-shadow:0 2px 20px 2px #777;
+    cursor:pointer;
+    transition:box-shadow 0.5s;
+}
+form small{
+    color:crimson;
+}
+
+/*Bootstrap*/
+/* tab color */
+.nav-tabs>li>a {
+  background-color: #000; 
+  border-color: #ddd;
+  color:#fff;
+}
+
+/* active tab color */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #333;
+  background-color: #bbb;
+  border: 1px solid #eee;
+}
+
+/* hover tab color */
+.nav-tabs>li>a:hover {
+  border-color: #000000;
+  background-color: #111111;
+}
+.nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+
+
+
